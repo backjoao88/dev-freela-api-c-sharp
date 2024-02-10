@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FreelaDev.MsAuth", "FreelaDev.MsAuth", "{B850F0E0-867E-4C57-B242-94BB1FC5FD84}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreelaDev.MsAuth.Api", "FreelaDev.MsAuth.Api\FreelaDev.MsAuth.Api.csproj", "{D9055E3C-A111-400A-B6BF-7936A923404B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreelaDev.MsAuth.Core", "FreelaDev.MsAuth.Core\FreelaDev.MsAuth.Core.csproj", "{ABE3075B-CBDE-499A-8200-1597433C9515}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreelaDev.MsAuth.Application", "FreelaDev.MsAuth.Application\FreelaDev.MsAuth.Application.csproj", "{11FEF748-D9C4-44ED-95C2-36CF02B538EB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreelaDev.MsAuth.Infrastructure", "FreelaDev.MsAuth.Infrastructure\FreelaDev.MsAuth.Infrastructure.csproj", "{4502FE1E-3D54-4463-A238-72CF5D678FF9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8A55E8BB-84BB-43FB-81C7-642336557289}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yml = docker-compose.yml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Source", "Source", "{0FA11A64-F942-4778-807F-CE9EF14DFA83}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D9055E3C-A111-400A-B6BF-7936A923404B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9055E3C-A111-400A-B6BF-7936A923404B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9055E3C-A111-400A-B6BF-7936A923404B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9055E3C-A111-400A-B6BF-7936A923404B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABE3075B-CBDE-499A-8200-1597433C9515}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABE3075B-CBDE-499A-8200-1597433C9515}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABE3075B-CBDE-499A-8200-1597433C9515}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABE3075B-CBDE-499A-8200-1597433C9515}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11FEF748-D9C4-44ED-95C2-36CF02B538EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11FEF748-D9C4-44ED-95C2-36CF02B538EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11FEF748-D9C4-44ED-95C2-36CF02B538EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11FEF748-D9C4-44ED-95C2-36CF02B538EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4502FE1E-3D54-4463-A238-72CF5D678FF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4502FE1E-3D54-4463-A238-72CF5D678FF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4502FE1E-3D54-4463-A238-72CF5D678FF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4502FE1E-3D54-4463-A238-72CF5D678FF9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0FA11A64-F942-4778-807F-CE9EF14DFA83} = {B850F0E0-867E-4C57-B242-94BB1FC5FD84}
+		{D9055E3C-A111-400A-B6BF-7936A923404B} = {0FA11A64-F942-4778-807F-CE9EF14DFA83}
+		{11FEF748-D9C4-44ED-95C2-36CF02B538EB} = {0FA11A64-F942-4778-807F-CE9EF14DFA83}
+		{ABE3075B-CBDE-499A-8200-1597433C9515} = {0FA11A64-F942-4778-807F-CE9EF14DFA83}
+		{4502FE1E-3D54-4463-A238-72CF5D678FF9} = {0FA11A64-F942-4778-807F-CE9EF14DFA83}
+	EndGlobalSection
+EndGlobal
