@@ -56,6 +56,7 @@
 
 ### Conceitos aplicados
 
+- [x] Utilizar docker para gerenciar os serviços e os bancos de dados;
 - [x] Aplicar documentação de APIs com o Swagger
 - [x] Arquiteturar camadas da arquitetura limpa
 - [x] Aplicar ORM EfCore nas entidades
@@ -75,7 +76,7 @@
 - [ ] Criar um serviço de pagamento para o serviço de projetos
     - [x] Criar uma abstração de pagamentos no serviço de projetos;
     - [x] Criar uma conexão entre o serviço de projetos e pagamentos via HTTP;
-    - [ ] Criar um repositório para salvar os pagamentos em um banco de dados MySQL;
+    - [x] Criar um repositório para salvar os pagamentos em um banco de dados MySQL;
     - [ ] Criar uma conexão entre o serviço de projetos e pagamentos via mensagens (RabbitMQ);
 - [ ] Aplicar conceitos de DevOps com o Azure
 
