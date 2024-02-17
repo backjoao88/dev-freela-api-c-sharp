@@ -1,6 +1,6 @@
 # DevFreela
 
-<p>O projeto DevFreela foi realizado durante o curso de Formação em ASP Net Core afim de aperfeiçoar minhas habilidades na construção de APIs. </p>
+<p>O projeto DevFreela foi realizado durante o curso de Formação em ASP Net Core afim de aperfeiçoar minhas habilidades na construção de APIs. Ele consiste em dois serviços (um de projetos e um de pagamentos) que se comunicam entre sí. </p>
 
 ### Descrição
 <p>Plataforma para cadastro e contratação de serviços de Freelancer de desenvolvedores no formato de API. Oferece uma plataforma unificada para os clientes contratarem os melhores freelancers para seus projetos, de maneira confiável e gerenciada.</p>
