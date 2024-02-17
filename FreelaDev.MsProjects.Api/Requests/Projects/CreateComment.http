@@ -1,0 +1,8 @@
+POST http://localhost:8080/api/projects/comments
+Content-Type: application/json
+
+{
+  "idUser": "08dc2d62-86d0-42e0-88b4-c9a85d52e0b8",
+  "idProject": "08dc2e27-b6ce-4bf7-80d9-b1305af9dfbc",
+  "content": "123"
+}

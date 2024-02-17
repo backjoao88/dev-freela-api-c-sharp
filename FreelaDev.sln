@@ -1,14 +1,14 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FreelaDev.MsAuth", "FreelaDev.MsAuth", "{B850F0E0-867E-4C57-B242-94BB1FC5FD84}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FreelaDev.MsProjects", "FreelaDev.MsProjects", "{B850F0E0-867E-4C57-B242-94BB1FC5FD84}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreelaDev.MsAuth.Api", "FreelaDev.MsAuth.Api\FreelaDev.MsAuth.Api.csproj", "{D9055E3C-A111-400A-B6BF-7936A923404B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreelaDev.MsProjects.Api", "FreelaDev.MsProjects.Api\FreelaDev.MsProjects.Api.csproj", "{D9055E3C-A111-400A-B6BF-7936A923404B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreelaDev.MsAuth.Core", "FreelaDev.MsAuth.Core\FreelaDev.MsAuth.Core.csproj", "{ABE3075B-CBDE-499A-8200-1597433C9515}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreelaDev.MsProjects.Core", "FreelaDev.MsProjects.Core\FreelaDev.MsProjects.Core.csproj", "{ABE3075B-CBDE-499A-8200-1597433C9515}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreelaDev.MsAuth.Application", "FreelaDev.MsAuth.Application\FreelaDev.MsAuth.Application.csproj", "{11FEF748-D9C4-44ED-95C2-36CF02B538EB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreelaDev.MsProjects.Application", "FreelaDev.MsProjects.Application\FreelaDev.MsProjects.Application.csproj", "{11FEF748-D9C4-44ED-95C2-36CF02B538EB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreelaDev.MsAuth.Infrastructure", "FreelaDev.MsAuth.Infrastructure\FreelaDev.MsAuth.Infrastructure.csproj", "{4502FE1E-3D54-4463-A238-72CF5D678FF9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreelaDev.MsProjects.Infrastructure", "FreelaDev.MsProjects.Infrastructure\FreelaDev.MsProjects.Infrastructure.csproj", "{4502FE1E-3D54-4463-A238-72CF5D678FF9}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8A55E8BB-84BB-43FB-81C7-642336557289}"
 	ProjectSection(SolutionItems) = preProject
@@ -16,6 +16,22 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Source", "Source", "{0FA11A64-F942-4778-807F-CE9EF14DFA83}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreelaDev.MsProjects.Tests", "FreelaDev.MsProjects.Tests\FreelaDev.MsProjects.Tests.csproj", "{8CDF1951-D510-44F5-80C6-B3F3AF5B3F97}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FreelaDev.MsPayments", "FreelaDev.MsPayments", "{22FA280C-E9C0-4F15-9743-355E57F10FAC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Source", "Source", "{2D375B9F-CCF2-4D6F-B314-867C7D3E0659}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreelaDev.MsPayments.Api", "FreelaDev.MsPayments.Api\FreelaDev.MsPayments.Api.csproj", "{3390120F-3E22-4A82-A448-4EDD5D07DD37}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{52B80507-6310-4099-AF33-56D75DB78D48}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreelaDev.MsPayments.Core", "FreelaDev.MsPayments.Core\FreelaDev.MsPayments.Core.csproj", "{453F17E1-1EF6-4F96-A6AF-B8F85BD90F39}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreelaDev.MsPayments.Application", "FreelaDev.MsPayments.Application\FreelaDev.MsPayments.Application.csproj", "{9B1B44D0-BB1B-44D5-AFB5-181B5448B277}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreelaDev.MsPayments.Infrastructure", "FreelaDev.MsPayments.Infrastructure\FreelaDev.MsPayments.Infrastructure.csproj", "{BD070563-4D17-40D7-80D9-CDF64C00651F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +55,26 @@ Global
 		{4502FE1E-3D54-4463-A238-72CF5D678FF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4502FE1E-3D54-4463-A238-72CF5D678FF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4502FE1E-3D54-4463-A238-72CF5D678FF9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8CDF1951-D510-44F5-80C6-B3F3AF5B3F97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CDF1951-D510-44F5-80C6-B3F3AF5B3F97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CDF1951-D510-44F5-80C6-B3F3AF5B3F97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CDF1951-D510-44F5-80C6-B3F3AF5B3F97}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3390120F-3E22-4A82-A448-4EDD5D07DD37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3390120F-3E22-4A82-A448-4EDD5D07DD37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3390120F-3E22-4A82-A448-4EDD5D07DD37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3390120F-3E22-4A82-A448-4EDD5D07DD37}.Release|Any CPU.Build.0 = Release|Any CPU
+		{453F17E1-1EF6-4F96-A6AF-B8F85BD90F39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{453F17E1-1EF6-4F96-A6AF-B8F85BD90F39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{453F17E1-1EF6-4F96-A6AF-B8F85BD90F39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{453F17E1-1EF6-4F96-A6AF-B8F85BD90F39}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B1B44D0-BB1B-44D5-AFB5-181B5448B277}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B1B44D0-BB1B-44D5-AFB5-181B5448B277}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B1B44D0-BB1B-44D5-AFB5-181B5448B277}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B1B44D0-BB1B-44D5-AFB5-181B5448B277}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD070563-4D17-40D7-80D9-CDF64C00651F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD070563-4D17-40D7-80D9-CDF64C00651F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD070563-4D17-40D7-80D9-CDF64C00651F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD070563-4D17-40D7-80D9-CDF64C00651F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{0FA11A64-F942-4778-807F-CE9EF14DFA83} = {B850F0E0-867E-4C57-B242-94BB1FC5FD84}
@@ -46,5 +82,12 @@ Global
 		{11FEF748-D9C4-44ED-95C2-36CF02B538EB} = {0FA11A64-F942-4778-807F-CE9EF14DFA83}
 		{ABE3075B-CBDE-499A-8200-1597433C9515} = {0FA11A64-F942-4778-807F-CE9EF14DFA83}
 		{4502FE1E-3D54-4463-A238-72CF5D678FF9} = {0FA11A64-F942-4778-807F-CE9EF14DFA83}
+		{2D375B9F-CCF2-4D6F-B314-867C7D3E0659} = {22FA280C-E9C0-4F15-9743-355E57F10FAC}
+		{3390120F-3E22-4A82-A448-4EDD5D07DD37} = {2D375B9F-CCF2-4D6F-B314-867C7D3E0659}
+		{52B80507-6310-4099-AF33-56D75DB78D48} = {B850F0E0-867E-4C57-B242-94BB1FC5FD84}
+		{8CDF1951-D510-44F5-80C6-B3F3AF5B3F97} = {52B80507-6310-4099-AF33-56D75DB78D48}
+		{453F17E1-1EF6-4F96-A6AF-B8F85BD90F39} = {2D375B9F-CCF2-4D6F-B314-867C7D3E0659}
+		{9B1B44D0-BB1B-44D5-AFB5-181B5448B277} = {2D375B9F-CCF2-4D6F-B314-867C7D3E0659}
+		{BD070563-4D17-40D7-80D9-CDF64C00651F} = {2D375B9F-CCF2-4D6F-B314-867C7D3E0659}
 	EndGlobalSection
 EndGlobal

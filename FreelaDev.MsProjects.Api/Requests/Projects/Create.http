@@ -1,0 +1,11 @@
+POST http://localhost:8080/api/projects
+Content-Type: application/json
+
+{
+  "title": "2",
+  "description": "2",
+  "idClient": "08dc2fc5-9e4e-4908-87d9-ce92d1c27a71",
+  "idFreelancer": "08dc2fbd-e418-4e77-8493-7361db073c34",
+  "totalCost": 1000
+}
+###

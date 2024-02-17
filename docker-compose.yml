@@ -1,0 +1,70 @@
+﻿version: '3.5'
+
+networks:
+  freeladev.net.msprojects:
+    driver: bridge
+  freeladev.net.msprojects.db:
+    driver: bridge
+  freeladev.net.mspayments:
+    driver: bridge
+  freeladev.net.mspayments.db:
+    driver: bridge
+
+services:
+  freeladev.msprojects.db:
+    image: mysql:latest
+    container_name: freeladev.msprojects.db
+    networks:
+      - freeladev.net.msprojects.db
+    ports:
+      - 3306:3036
+    environment:
+      MYSQL_USER: jooba
+      MYSQL_PASSWORD: joobasecretandlonsgpassword
+      MYSQL_ROOT_PASSWORD: rootsecretandlongpassword
+      MYSQL_DATABASE: msprojectsdb
+    volumes:
+      - /FreelaDev.MsProjects.Infrastructure/Db:/var/lib/mysql
+  freeladev.msprojects.api:
+    image: freeladev.msprojects.api
+    networks:
+      - freeladev.net.msprojects
+      - freeladev.net.mspayments
+      - freeladev.net.msprojects.db
+    build:
+      context: .
+      dockerfile: FreelaDev.MsProjects.Api/Dockerfile
+    container_name: freeladev.msprojects.api
+    restart: always
+    depends_on: 
+      - freeladev.msprojects.db
+    ports:
+      - 8080:8080
+  freeladev.mspayments.db:
+    image: mysql:latest
+    container_name: freeladev.mspayments.db
+    networks:
+      - freeladev.net.mspayments.db
+    ports:
+      - 3307:3036
+    environment:
+      MYSQL_USER: jooba
+      MYSQL_PASSWORD: joobasecretandlonsgpassword
+      MYSQL_ROOT_PASSWORD: rootsecretandlongpassword
+      MYSQL_DATABASE: mspaymentsdb
+    volumes:
+      - /FreelaDev.MsPayments.Infrastructure/Db:/var/lib/mysql
+  freeladev.mspayments.api:
+    image: freeladev.mspayments.api
+    build:
+      context: .
+      dockerfile: FreelaDev.MsPayments.Api/Dockerfile
+    container_name: freeladev.mspayments.api
+    restart: always
+    networks:
+      - freeladev.net.mspayments
+      - freeladev.net.mspayments.db
+    depends_on: 
+      - freeladev.mspayments.db
+    ports:
+      - 8081:8080

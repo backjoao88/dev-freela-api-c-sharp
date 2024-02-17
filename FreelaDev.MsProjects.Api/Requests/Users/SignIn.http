@@ -1,0 +1,7 @@
+PUT http://localhost:8080/api/users/signin
+Content-Type: application/json
+
+{
+  "email": "admin@mail.com",
+  "password": "123"
+}

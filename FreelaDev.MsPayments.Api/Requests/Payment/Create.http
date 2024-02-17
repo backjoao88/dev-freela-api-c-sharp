@@ -1,0 +1,10 @@
+POST http://localhost:8081/api/payments
+Content-Type: application/json
+
+{
+  "creditCardNumber": "123",
+  "fullName": "JOAO PAULO BACK",
+  "amount": 1000,
+  "cvv": "teste",
+  "expiresAt": "2"
+}

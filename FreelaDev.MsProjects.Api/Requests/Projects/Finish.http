@@ -1,0 +1,7 @@
+PUT http://localhost:8080/api/projects/finish
+Content-Type: application/json
+
+{
+  "idProject": "08dc2fc5-bdc4-4026-87bc-4670bd301b3a"
+}
+###
