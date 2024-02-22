@@ -5,6 +5,5 @@ namespace FreelaDev.MsProjects.Infrastructure.Services.Payment.Configurations;
 /// </summary>
 public class PaymentOptions
 {
-    public string BaseUrl { get; set; } = string.Empty;
-    public string Resource { get; set; } = string.Empty;
+    public string QueueName { get; set; } = string.Empty;
 }

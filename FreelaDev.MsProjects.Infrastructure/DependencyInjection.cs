@@ -1,4 +1,5 @@
 using FreelaDev.MsProjects.Application.Services.Authentication;
+using FreelaDev.MsProjects.Application.Services.MessageBroker;
 using FreelaDev.MsProjects.Application.Services.Payment;
 using FreelaDev.MsProjects.Core.Abstractions;
 using FreelaDev.MsProjects.Core.Repositories;
@@ -7,6 +8,8 @@ using FreelaDev.MsProjects.Infrastructure.Persistence.Configurations;
 using FreelaDev.MsProjects.Infrastructure.Persistence.Repositories;
 using FreelaDev.MsProjects.Infrastructure.Services.Authentication;
 using FreelaDev.MsProjects.Infrastructure.Services.Authentication.Configurations;
+using FreelaDev.MsProjects.Infrastructure.Services.MessageBroker;
+using FreelaDev.MsProjects.Infrastructure.Services.MessageBroker.Configurations;
 using FreelaDev.MsProjects.Infrastructure.Services.Payment;
 using FreelaDev.MsProjects.Infrastructure.Services.Payment.Configurations;
 using Microsoft.EntityFrameworkCore;
@@ -35,16 +38,19 @@ public static class DependencyInjection
         return services;
     }
 
+    public static IServiceCollection AddBroker(this IServiceCollection services)
+    {
+        services
+            .ConfigureOptions<MessageBrokerOptionsSetup>()
+            .AddScoped<IMessageBroker, RabbitMqMessageBroker>();
+        return services;
+    }
+
     public static IServiceCollection AddPayment(this IServiceCollection services)
     {
         services
             .ConfigureOptions<PaymentOptionsSetup>()
-            .AddHttpClient<IPaymentService, PaymentService>(((provider, client) =>
-            {
-                var options = provider.GetService<IOptions<PaymentOptions>>();
-                if (options is null) return;
-                client.BaseAddress = new Uri(options.Value.BaseUrl);
-            }));
+            .AddScoped<IPaymentService, PaymentService>();
         return services;
     }
 

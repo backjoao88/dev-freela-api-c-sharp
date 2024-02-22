@@ -81,7 +81,7 @@ public class ProjectController : ApiController
     public async Task<IActionResult> Start([FromBody] StartProjectCommand startProjectCommand)
     {
         var result = await _mediator.Send(startProjectCommand);
-        return result.IsSuccess ? Ok() : BadRequest(result.Error);
+        return result.IsSuccess ? NoContent() : BadRequest(result.Error);
     }
 
     /// <summary>
@@ -94,6 +94,6 @@ public class ProjectController : ApiController
     public async Task<IActionResult> Finish([FromBody] FinishProjectCommand finishProjectCommand)
     {
         var result = await _mediator.Send(finishProjectCommand);
-        return result.IsSuccess ? Ok() : BadRequest(result.Error);
+        return result.IsSuccess ? NoContent() : BadRequest(result.Error);
     }
 }

@@ -19,6 +19,7 @@ public static class Program
         builder.Services.AddControllers();
         builder.Services.AddScoped<ExceptionMiddleware>();
         builder.Services.AddDatabase();
+        builder.Services.AddBroker();
         builder.Services.AddPayment();
         builder.Services.AddValidators();
         builder.Services.AddMediator();

@@ -4,9 +4,9 @@ Content-Type: application/json
 {
   "firstName": "José",
   "lastName": "Back",
-  "email": "jose@mail.com",
+  "email": "teste@mail.com",
   "password": "123",
-  "role": 1,
+  "role": 3,
   "skills": [
     {
       "description": ".NET Core 7+"

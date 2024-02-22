@@ -78,6 +78,11 @@
     - [x] Criar uma conexão entre o serviço de projetos e pagamentos via HTTP;
     - [x] Criar um repositório para salvar os pagamentos em um banco de dados MySQL;
     - [ ] Criar uma conexão entre o serviço de projetos e pagamentos via mensagens (RabbitMQ);
+      - [ ] No serviço de projetos, criar a conexão com as filas RabbitMQ e publicar uma mensagem de pagamento ao finalizar projeto;
+      - [ ] No serviço de pagamentos, criar um background service para consumir as mensagens de pagamentos; 
+        - [ ] Caso seja realizado com sucesso, enviar uma mensagem para uma fila de "Pagamentos aprovados";
+        - [ ] Caso seja realizado com falha, enviar uma mensagem para uma fila de "Pagamentos reprovados";
+      - [ ] No serviço de projetos, consumir as mensagens das filas aprovados e reprovados, e realizar alteração correspondente no projeto;
 - [ ] Aplicar conceitos de DevOps com o Azure
 
 ### Linkedin

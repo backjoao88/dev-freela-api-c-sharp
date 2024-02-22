@@ -11,7 +11,7 @@ public interface IPaymentRepository
     /// Saves a new payment.
     /// </summary>
     /// <param name="payment"></param>
-    public Task Save(Payment payment);
+    public void Save(Payment payment);
 
     /// <summary>
     /// Retrieve all payments.

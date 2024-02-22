@@ -12,6 +12,8 @@ public abstract class Program
     {
         var builder = WebApplication.CreateBuilder(args);
         builder.Services.AddControllers();
+        builder.Services.AddBroker();
+        builder.Services.AddBackgroundServices();
         builder.Services.AddApplication();
         builder.Services.AddInfrastructure();
         var app = builder.Build();

@@ -1,4 +1,5 @@
 using FreelaDev.MsProjects.Application.Commands.Projects.Start;
+using FreelaDev.MsProjects.Application.Services.MessageBroker;
 using FreelaDev.MsProjects.Application.Services.Payment;
 using FreelaDev.MsProjects.Core.Abstractions;
 using FreelaDev.MsProjects.Core.Primitives;
@@ -11,11 +12,13 @@ public class FinishProjectCommandHandler : IRequestHandler<FinishProjectCommand,
 {
     readonly IUnitOfWork _unitOfWork;
     readonly IPaymentService _paymentService;
+    readonly IMessageBroker _broker;
 
-    public FinishProjectCommandHandler(IUnitOfWork unitOfWork, IPaymentService paymentService)
+    public FinishProjectCommandHandler(IUnitOfWork unitOfWork, IPaymentService paymentService, IMessageBroker broker)
     {
         _unitOfWork = unitOfWork;
         _paymentService = paymentService;
+        _broker = broker;
     }
 
     public async Task<Result> Handle(FinishProjectCommand request, CancellationToken cancellationToken)

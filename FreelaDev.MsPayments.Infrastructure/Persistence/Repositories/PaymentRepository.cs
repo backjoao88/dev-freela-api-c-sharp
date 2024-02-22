@@ -15,10 +15,10 @@ public class PaymentRepository : IPaymentRepository
     }
 
     /// <inheritdoc/>>
-    public async Task Save(Payment payment)
+    public void Save(Payment payment)
     {
-        await _dbContext.Payments.AddAsync(payment);
-        await _dbContext.SaveChangesAsync();
+        _dbContext.Payments.Add(payment);
+        _dbContext.SaveChanges();
     }
 
     /// <inheritdoc/>>
